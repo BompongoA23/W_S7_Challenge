@@ -30,7 +30,7 @@ const toppings = [
 export default function Form() {
  
 const[formData,setFormData]=useState({fullName:"", size:"",toppings:[]})
-const[error,setErrors]useState({});
+const[error,setErrors]=useState({});
 
 
 const handleChange = (e) => {
@@ -39,7 +39,7 @@ const handleChange = (e) => {
 }
 
 const handleCheckboxChange = (e) =>{
-  const{name, cheked}= e.target
+  const{name, checked}= e.target
   let updatedToppings = checked
   ?[...formData.toppings, name]
   :formData.toppings.filter((topping) => topping !== name);
