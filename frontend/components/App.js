@@ -3,6 +3,7 @@ import { Link, Routes, Route } from 'react-router-dom'
 import Home from './Home'
 import Form from './Form'
 
+
 function App() {
   return (
     <div id="app">
@@ -16,8 +17,7 @@ function App() {
       <Route path="/order" element={<Form />} />
       </Routes>
       {/* Route and Routes here */}
-      <Home />
-      <Form />
+
     </div>
   )
 }
